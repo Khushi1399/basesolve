@@ -1,38 +1,113 @@
 .App {
-  text-align: center;
+  margin: 65px 250px;
+  padding: 20px;
+  font-family: 'Poppins-Light';
+}
+.header{
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 40px;
+  font-family: 'Poppins-Light';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.react-tabs__tab:focus {
+  box-shadow: none !important;
+  outline: none;
+}
+.ag-theme-balham{
+  font-family: 'Poppins-Light' !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.react-tabs__tab-list,
+.react-tabs__tab {
+  border: 0 !important;
+  padding :16px 35px !important;
+  position: relative !important;
+}
+
+.react-tabs__tab--selected,
+.react-tabs__tab--selected:focus,
+.react-tabs__tab:focus {
+  border-bottom: 3px solid #52568f !important;
+  color: #0f1ef8 !important;
+}
+.react-tabs__tab:focus:after {
+  bottom: -7px !important;
+}
+.nav-border{
+  font-size:24px;
+  border-bottom: 2px solid rgb(219, 217, 217)
+}
+ul.nav-border {
+  margin: 0;
+  padding: 0;
+}
+.addButton{
+  position: absolute;
+/* right: 0; */
+padding-top: 13px;
+padding-left: 989px;
+}
+.react-tabs__tab-panel{
+  padding-top: 45px !important;
+}
+.patient-table {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 0px;}
+  .ag-theme-balham .ag-root-wrapper{
+    border:none !important;
   }
-}
+  .ag-theme-balham .ag-header
+    {
+    background-color: white !important;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  .ant-select{
+    width:315px;
   }
-}
+  .error-msg{
+    padding-left: 0.25rem;
+    padding-top: 0.25rem;
+    font-size: .75rem;
+    line-height: 1rem;
+    color:red
+  }
+  .css-1s2u09g-control{
+    border-radius: 50px !important;
+  }
+  
+  .ant-modal-title{
+    text-align: center;
+  }
+  .ant-modal-footer{    
+    text-align: center !important;
+  }
+  .ant-btn-primary{
+    border-color: black !important;
+    background: black !important;
+  }
+ 
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+    border-radius: 55px !important;
+  }
+
+  @font-face {
+    font-family: "Poppins-Thin";
+    src: local("Poppins-Thin"),
+     url("./fonts/Poppins-Thin.ttf") format("truetype");
+    font-weight: bold;
+    }
+
+    @font-face {
+      font-family: "Poppins-Light";
+      src: local("Poppins-Light"),
+       url("./fonts/Poppins-Light.ttf") format("truetype");
+      font-weight: bold;
+      }
+      .ant-modal-wrap{
+        font-family: 'Poppins-Light';
+      }
+      .ag-theme-balham .ag-header-cell::after, .ag-theme-balham .ag-header-group-cell::after{
+        display: none;
+      }
